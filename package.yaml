@@ -5,12 +5,13 @@ dependencies:
 - base >= 4.7 && < 5
 
 executables:
-  Mute-exe:
+  mute:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-      #    dependencies:
+        - -threaded
+        - -rtsopts
+        - -with-rtsopts=-N
+    dependencies:
+        - process
 
